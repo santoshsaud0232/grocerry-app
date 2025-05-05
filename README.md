@@ -1,8 +1,10 @@
+<<<<<<< HEAD
 # grocerry_app
 
 A new Flutter project.
 
-## Getting Started
+## Getting Started 
+This is my awesome grocerry app project
 
 This project is a starting point for a Flutter application.
 
