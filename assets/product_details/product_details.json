@@ -1,0 +1,300 @@
+   { 
+    "fruits": [ 
+   
+        { 
+            "name":"apple", 
+            "details": "Sweet and crisp apple, rich in fiber and vitamins. Available in red and green varieties. Locally sourced.", 
+            "path": "assets/fruits/apple1.png", 
+            "price": "$4.99"
+        }, 
+              { 
+            "name": "orange", 
+            "details": "Sweet and crisp orange, rich in fiber and vitamins. Available in orange and green varieties. Locally sourced.", 
+            "path": "assets/fruits/orange.jpeg", 
+            "price": "$3.99"
+         }, 
+            {
+             "name": "grapes", 
+             "details":"Sweet and crisp grapes, rich in fiber and vitamins. Available in black and green varieties. Locally sourced.", 
+             "path":"assets/fruits/grapes.png", 
+             "price": "$5.99"
+            }, 
+            { 
+                "name":  "litchi", 
+                "details":"Sweet and crisp litchi found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+                "path": "assets/fruits/litchi.png", 
+                "price": "$3.22"
+            }, 
+            { 
+                "name": "kafal", 
+                "details":"Sweet and crisp kafal found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+                "path": "assets/fruits/kafal.webp", 
+                "price": "$8.99"
+            }, 
+            { 
+                "name": "banana", 
+                "details":"Sweet and crisp banana found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+                "path": "assets/fruits/banana.png", 
+                "price": "$8.99"
+            }, 
+            { 
+                "name": "gauva", 
+                "details":"Sweet and crisp gauva found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+                "path": "assets/fruits/gauva.png", 
+                "price": "$2.99"
+            }, 
+            { 
+                "name": "kimi", 
+                "details":"Sweet and crisp kiwi found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+                "path": "assets/fruits/kimi.webp", 
+                "price": "$8.99"
+            }, 
+            { 
+                "name": "mango", 
+                "details":"Sweet and crisp mango found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+                "path": "assets/fruits/redmango.jpeg", 
+                "price": "$8.99"
+            }
+    
+  
+], 
+     "grocery":    [ 
+
+{ 
+    "name": "kimi", 
+    "details":"Sweet and crisp kiwi found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+    "path": "assets/fruits/kimi.webp", 
+    "price": "$8.99"
+}, 
+{ 
+    "name": "mango", 
+    "details":"Sweet and crisp mango found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+    "path": "assets/fruits/redmango.jpeg", 
+    "price": "$8.99"
+}
+   ], 
+
+   "bestSelling": [
+    { 
+        "name": "gauva", 
+        "details":"Sweet and crisp gauva found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+        "path": "assets/fruits/gauva.png", 
+        "price": "$2.99"
+    }, 
+    { 
+        "name": "kimi", 
+        "details":"Sweet and crisp kiwi found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+        "path": "assets/fruits/kimi.webp", 
+        "price": "$8.99"
+    }, 
+    { 
+        "name": "mango", 
+        "details":"Sweet and crisp mango found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+        "path": "assets/fruits/redmango.jpeg", 
+        "price": "$8.99"
+    }, 
+    { 
+        "name": "snack", 
+        "details":"home made fried snack made from fresh potato  found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+        "path": "assets/grocery/snacks.png", 
+        "price": "$5.99"
+    }, 
+    { 
+        "name": "fresh vegetable", 
+        "details":"Fresh vegetable found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+        "path": "assets/grocery/vegetables.png", 
+        "price": "$12.99"
+    }
+    ], 
+    "explore": [
+        { 
+            "name": "fruits", 
+            "details":"Sweet and crisp gauva found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/fruits/gauva.png", 
+            "price": "$2.99"
+        }, 
+      
+       
+        { 
+            "name": "snack", 
+            "details":"home made fried snack made from fresh potato  found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/grocery/snacks.png", 
+            "price": "$5.99"
+        }, 
+        { 
+            "name": "fresh vegetable", 
+            "details":"Fresh vegetable found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/grocery/vegetables.png", 
+            "price": "$12.99"
+        }, 
+        { 
+            "name": "meat", 
+            "details":"Fresh vegetable found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/grocery/mutton.png", 
+            "price": "$12.99"
+        }, 
+        { 
+            "name": "pet food", 
+            "details":"Fresh vegetable found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/grocery/catfood.jpg", 
+            "price": "$2.99"
+        }, 
+        { 
+            "name": "dairy", 
+            "details":"Fresh vegetable found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/grocery/dairy.jpg", 
+            "price": "$15.99"
+        }, 
+        { 
+            "name": "beverages", 
+            "details":"Fresh vegetable found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/fruits/pngfuel 8.png", 
+            "price": "$7.99"
+        }, 
+        { 
+            "name": "beverages", 
+            "details":"Fresh vegetable found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/fruits/pngfuel 8.png", 
+            "price": "$7.99"
+        }
+
+
+        ] ,
+      "beverages": [ 
+          { 
+            "name": "coke", 
+            "details":"Fresh coke made in nepal found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/beverage/coke.png", 
+            "price": "$7.99"
+        }, 
+        { 
+            "name": "juice", 
+            "details":"Fresh coke made in nepal found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/beverage/juice.png", 
+            "price": "$3.99"
+        },  
+        { 
+            "name": "sprite", 
+            "details":"Fresh sprie made in nepal found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/beverage/sprite.png", 
+            "price": "$2.99"
+        }, 
+        { 
+            "name": "coke", 
+            "details":"Fresh coke made in nepal found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/beverage/coke.png", 
+            "price": "$7.99"
+        }
+    ], 
+    "vegetable": [ 
+        { 
+            "name": "fresh cauli", 
+            "details":"Fresh cauli found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/vegetables/cauli.png", 
+            "price": "$3.99"
+        }, 
+        { 
+            "name": "fresh leaf", 
+            "details":"Fresh leaf found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/vegetables/banda_leaf.png", 
+            "price": "$2.99"
+        }, 
+        { 
+            "name": "fresh potato", 
+            "details":"Fresh potato found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/vegetables/potato.png", 
+            "price": "$3.99"
+        }, 
+        { 
+            "name": "fresh tomato", 
+            "details":"Fresh tomato found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/vegetables/tomato.png", 
+            "price": "$5.99"
+        }, 
+        { 
+            "name": "fresh vegetable box", 
+            "details":"Fresh local vegetable box  in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/vegetables/vegetable_box.png", 
+            "price": "$10.99"
+        }
+    ], 
+    "snack": [ 
+        { 
+            "name": "cripsy chips", 
+            "details":"Fresh cripsy chips found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/chips/cripsy_rings.png", 
+            "price": "$5.99"
+        }, 
+        { 
+            "name": "ice cream ", 
+            "details":"Fresh ice cream  found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/chips/ice_cream.png", 
+            "price": "$1.99"
+        }, 
+        { 
+            "name": "potato chips", 
+            "details":"Fresh potato chips found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/chips/potato_chips.png", 
+            "price": "$4.99"
+        }, 
+        { 
+            "name": "snack pack", 
+            "details":"Fresh snack pack chips found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/chips/snacks.png", 
+            "price": "$4.99"
+        }
+    ], 
+    "dairy": [ 
+        { 
+            "name": "curd", 
+            "details":"Fresh curd found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/grocery/image copy.png", 
+            "price": "$4.99"
+        }, 
+        { 
+            "name": "dairy", 
+            "details":"Fresh dairy product found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/grocery/dairy.jpg", 
+            "price": "$3.99"
+        }, 
+        { 
+            "name": "ghee", 
+            "details":"Fresh ghee found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/grocery/image.png", 
+            "price": "$7.99"
+        }, 
+        { 
+            "name": "ice cream ", 
+            "details":"Fresh ice cream  found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/chips/ice_cream.png", 
+            "price": "$1.99"
+        }
+    ], 
+    "meat": [ 
+        { 
+            "name":  "fresh mutton", 
+            "details":"Fresh mutton found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/grocery/mutton.png", 
+            "price": "$12.99"
+        }, 
+        { 
+            "name": "fresh chicken", 
+            "details":"Fresh checken found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/grocery/chicken.png", 
+            "price": "$2.99"
+        }, 
+        { 
+            "name": "local eggs", 
+            "details":"Fresh eggs found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/grocery/eggs.png", 
+            "price": "$1.99"
+        }, 
+        { 
+            "name": "khasi ko mutton", 
+            "details":"Fresh mutton found in pahadi bheg of nepal, rich in fiber and vitamins. Available in red  varieties. Locally sourced.", 
+            "path": "assets/grocery/mutton.png", 
+            "price": "$20.99"
+        }
+    ]
+
+}
