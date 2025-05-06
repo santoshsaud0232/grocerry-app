@@ -4,12 +4,12 @@ import 'package:grocerry_app/model/product_details.dart';
 class CartItemsProvider extends ChangeNotifier {
   final List<Product> _cartItems = [];
   List<Product> get cartItems => _cartItems;
-  Map<String, int> _itemMap = {};
+  final Map<String, int> _itemMap = {};
   Map<String, int> get itemMap => _itemMap;
 
   // bool _isFav = false;
   // bool get isFav => _isFav;
-  Map<String, bool> _favMap = {};
+  final Map<String, bool> _favMap = {};
   Map<String, bool> get favMap => _favMap;
   //favrioute item list
   final List<Product> _favriouteItems = [];

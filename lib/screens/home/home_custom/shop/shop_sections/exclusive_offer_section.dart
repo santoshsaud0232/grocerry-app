@@ -3,7 +3,6 @@ import 'package:go_router/go_router.dart';
 import 'package:grocerry_app/app_state/product_state/product_provider.dart';
 
 import 'package:grocerry_app/custom_widget/fruits_container.dart';
-import 'package:grocerry_app/model/product_model.dart';
 import 'package:provider/provider.dart';
 
 class ExclusiveOfferSection extends StatefulWidget {
@@ -39,45 +38,30 @@ class _ExclusiveOfferSectionState extends State<ExclusiveOfferSection> {
       );
     }
 
-    return FutureBuilder(
-      future: ProductModel.loadAssets(),
-      builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting) {
-          return const Center(
-            child: CircularProgressIndicator(),
-          );
-        }
-        if (snapshot.hasError) {
-          return Center(
-            child: Text("Error Occurred: ${productProvider.message}"),
-          );
-        }
-        return SizedBox(
-          height: 300,
-          child: ListView.builder(
-            itemCount: fruitsList.length,
-            scrollDirection: Axis.horizontal,
-            itemBuilder: (context, index) {
-              final item = fruitsList[index];
-              return FruitsContainter(
-                containerOnTap: () {
-                  //navigate with the go router and pass the product
-                  context.push('/product/${item.itemName}', extra: item);
-                },
-                itemImage: Expanded(
-                  child: Image.asset(
-                    item.path,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                fruitsName: item.itemName,
-                price: item.itemPrice,
-                onTap: () {},
-              );
+    return SizedBox(
+      height: 300,
+      child: ListView.builder(
+        itemCount: fruitsList.length,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, index) {
+          final item = fruitsList[index];
+          return FruitsContainter(
+            containerOnTap: () {
+              //navigate with the go router and pass the product
+              context.push('/product/${item.itemName}', extra: item);
             },
-          ),
-        );
-      },
+            itemImage: Expanded(
+              child: Image.asset(
+                item.path,
+                fit: BoxFit.cover,
+              ),
+            ),
+            fruitsName: item.itemName,
+            price: item.itemPrice,
+            onTap: () {},
+          );
+        },
+      ),
     );
   }
 }

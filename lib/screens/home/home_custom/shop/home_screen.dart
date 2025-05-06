@@ -31,6 +31,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 //  search bar
                 SearchBarTextField(
+                  onchanged: (text) {},
                   controller: controller,
                 ),
                 const SizedBox(height: 20),

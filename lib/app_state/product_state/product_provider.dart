@@ -2,15 +2,18 @@ import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 import 'package:grocerry_app/model/product_details.dart';
 
 class ProductProvider extends ChangeNotifier {
   bool _isLoading = false;
+
   String message = '';
   bool get isLoading => _isLoading;
   Map<String, List<Product>> _product = {};
   Map<String, List<Product>> get product => _product;
+  List<Product> _filteredList = [];
+  List<Product> get filteredList =>
+      _filteredList.isEmpty ? _product['explore'] ?? [] : _filteredList;
 
   Future<void> loadAssets() async {
     _isLoading = true;
@@ -74,5 +77,21 @@ class ProductProvider extends ChangeNotifier {
       }
       notifyListeners();
     }
+  }
+
+  //search and filter item in the list
+  void searchItems(String query) {
+    List<Product> originalList = _product['explore'] ?? [];
+    if (query.isEmpty) {
+      _filteredList = [];
+    } else {
+      _filteredList = originalList.where((item) {
+        var itemName = item.itemName.toLowerCase();
+        final input = query.toLowerCase();
+        return itemName.contains(input);
+      }).toList();
+    }
+
+    notifyListeners();
   }
 }

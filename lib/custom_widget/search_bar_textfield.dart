@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 class SearchBarTextField extends StatelessWidget {
   final TextEditingController controller;
-  const SearchBarTextField({
+  final Function(String text)? onchanged;
+  SearchBarTextField({
     super.key,
     required this.controller,
+    required this.onchanged,
   });
 
   @override
@@ -18,6 +20,7 @@ class SearchBarTextField extends StatelessWidget {
             color: const Color.fromARGB(255, 223, 228, 233),
             borderRadius: BorderRadius.circular(8)),
         child: TextField(
+          onChanged: onchanged,
           controller: controller,
           decoration: const InputDecoration(
             prefixIcon: Icon(Icons.search_outlined),

@@ -5,6 +5,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:grocerry_app/app_routes/app_router.dart';
 import 'package:grocerry_app/app_state/navigation_bar_state.dart';
 import 'package:grocerry_app/app_state/product_state/cartItem_state.dart';
+import 'package:grocerry_app/app_state/product_state/filter_cart_state.dart';
 import 'package:grocerry_app/app_state/product_state/product_provider.dart';
 
 import 'package:provider/provider.dart';
@@ -32,7 +33,8 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => BottomNavigationBarState()),
-        ChangeNotifierProvider(create: (_) => CartItemsProvider())
+        ChangeNotifierProvider(create: (_) => CartItemsProvider()),
+        ChangeNotifierProvider(create: (_) => FilterCartStateProvider())
       ],
       child: MaterialApp.router(
         routerConfig: AppRouter().routes,
