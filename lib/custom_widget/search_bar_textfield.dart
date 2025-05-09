@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class SearchBarTextField extends StatelessWidget {
-  final TextEditingController controller;
+  TextEditingController? controller;
   final Function(String text)? onchanged;
-  const SearchBarTextField({
+  SearchBarTextField({
     super.key,
-    required this.controller,
+    this.controller,
     required this.onchanged,
   });
 
