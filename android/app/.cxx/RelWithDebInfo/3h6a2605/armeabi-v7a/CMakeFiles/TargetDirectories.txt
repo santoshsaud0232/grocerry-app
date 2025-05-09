@@ -1,2 +1,0 @@
-/home/santosh/myflutterprojects/grocerry_app/android/app/.cxx/RelWithDebInfo/3h6a2605/armeabi-v7a/CMakeFiles/edit_cache.dir
-/home/santosh/myflutterprojects/grocerry_app/android/app/.cxx/RelWithDebInfo/3h6a2605/armeabi-v7a/CMakeFiles/rebuild_cache.dir

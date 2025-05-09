@@ -1,2 +1,0 @@
-/home/santosh/ui_clone_all_project/grocerry_app/android/app/.cxx/Debug/1x5f6f2i/arm64-v8a/CMakeFiles/edit_cache.dir
-/home/santosh/ui_clone_all_project/grocerry_app/android/app/.cxx/Debug/1x5f6f2i/arm64-v8a/CMakeFiles/rebuild_cache.dir
