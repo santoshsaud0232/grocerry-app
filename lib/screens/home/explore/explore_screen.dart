@@ -38,8 +38,8 @@ class _ExploreProductScreenState extends State<ExploreProductScreen> {
     ProductProvider productProvider = Provider.of<ProductProvider>(context);
     //display filtered items if available or else display product[explore ] items
     final itemToDisplay = filterState.filteredItems['explore'] ??
-        productProvider.product['explore'] ??
-        [];
+        // productProvider.product['explore'] ??
+        productProvider.filteredList;
 
     return SafeArea(
       child: Scaffold(
@@ -62,7 +62,6 @@ class _ExploreProductScreenState extends State<ExploreProductScreen> {
                       onchanged: (text) {
                         productProvider.searchItems(text);
                       },
-                      controller: _controller,
                     ),
                   ),
                   //filter list
