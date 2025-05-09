@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grocerry_app/app_state/product_state/filter_cart_state.dart';
 import 'package:grocerry_app/app_state/product_state/product_provider.dart';
@@ -38,12 +37,12 @@ class FilterItemPage extends StatelessWidget {
             ),
           ),
         ),
-        body: Column(children: [
-          const SizedBox(
-            height: 50,
-          ),
-          Expanded(
-            child: Container(
+        body: SingleChildScrollView(
+          child: Column(children: [
+            const SizedBox(
+              height: 50,
+            ),
+            Container(
               height: MediaQuery.of(context).size.height,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
@@ -178,9 +177,9 @@ class FilterItemPage extends StatelessWidget {
                   ],
                 ),
               ),
-            ),
-          )
-        ]),
+            )
+          ]),
+        ),
       ),
     );
   }

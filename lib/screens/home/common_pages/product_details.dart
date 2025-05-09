@@ -93,7 +93,6 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                               onTap: () {
                                 value.favriouteItemsList(
                                     widget.product.itemName, widget.product);
-                                print(value.favriouteItems);
                               },
                               child: isFav
                                   ? const Icon(Icons.favorite,

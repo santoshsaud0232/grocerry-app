@@ -9,7 +9,7 @@ class CustomSnackBar extends StatelessWidget {
     return Center(
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.black.withOpacity(0.5),
+          color: Colors.black.withValues(),
         ),
         child: Text(
           message,

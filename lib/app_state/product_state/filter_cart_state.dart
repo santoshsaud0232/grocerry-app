@@ -6,10 +6,10 @@ import 'package:grocerry_app/model/product_details.dart';
 class FilterCartStateProvider extends ChangeNotifier {
   final List<String> _filterList = FilterCartModel.categories;
   List<String> get filterList => _filterList;
-  Map<String, bool> _filterItems = {};
+  final Map<String, bool> _filterItems = {};
   Map<String, bool> get filterItems => _filterItems;
 
-  Map<String, List<Product>> _filteredItems = {};
+  final Map<String, List<Product>> _filteredItems = {};
   Map<String, List<Product>> get filteredItems => _filteredItems;
 
   //instance of product provider

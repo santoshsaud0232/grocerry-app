@@ -28,7 +28,7 @@ class CustomUnderlineTextfield extends StatelessWidget {
         ),
         border: UnderlineInputBorder(
           borderSide: BorderSide(
-            color: Theme.of(context).colorScheme.background,
+            color: Theme.of(context).colorScheme.surface,
             width: 2.0,
           ),
           borderRadius: BorderRadius.circular(7),
