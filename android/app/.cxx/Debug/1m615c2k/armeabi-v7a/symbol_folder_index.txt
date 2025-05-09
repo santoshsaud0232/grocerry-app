@@ -1,1 +1,0 @@
-/home/santosh/myflutterprojects/grocerry_app/build/app/intermediates/cxx/Debug/1m615c2k/obj/armeabi-v7a
