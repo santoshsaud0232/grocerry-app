@@ -1,0 +1,1 @@
+/home/santosh/ui_clone_all_project/grocerry_app/build/app/intermediates/cxx/Debug/1x5f6f2i/obj/armeabi-v7a

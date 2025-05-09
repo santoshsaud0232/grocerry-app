@@ -1,0 +1,1 @@
+/home/santosh/myflutterprojects/grocerry_app/build/app/intermediates/cxx/Debug/1m615c2k/obj/arm64-v8a
