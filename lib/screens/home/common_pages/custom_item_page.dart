@@ -35,6 +35,8 @@ class CustomCartItemList extends StatelessWidget {
                   width: 100,
                   items.path,
                   fit: BoxFit.contain,
+                  cacheWidth: 300,
+                  cacheHeight: 252,
                 ),
               ),
               fruitsName: items.itemName,

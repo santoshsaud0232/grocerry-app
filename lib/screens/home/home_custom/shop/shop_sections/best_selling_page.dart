@@ -50,6 +50,8 @@ class _BestSellingState extends State<BestSelling> {
               itemImage: Flexible(
                 child: Image.asset(
                   bestSellingItems.path,
+                  cacheHeight: 216,
+                  cacheWidth: 216,
                 ),
               ),
               fruitsName: bestSellingItems.itemName,

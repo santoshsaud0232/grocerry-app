@@ -54,6 +54,8 @@ class _ExclusiveOfferSectionState extends State<ExclusiveOfferSection> {
               child: Image.asset(
                 item.path,
                 fit: BoxFit.cover,
+                cacheHeight: 300,
+                cacheWidth: 450,
               ),
             ),
             fruitsName: item.itemName,

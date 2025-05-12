@@ -63,6 +63,8 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                     widget.product.path,
                     fit: BoxFit.contain,
                     filterQuality: FilterQuality.high,
+                    cacheWidth: 450,
+                    cacheHeight: 300,
                   ),
                 ),
               ),

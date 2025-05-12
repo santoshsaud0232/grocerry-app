@@ -32,7 +32,11 @@ class ItemContainer extends StatelessWidget {
             SizedBox(
               height: 100,
               width: 100,
-              child: Image.asset(imagePath),
+              child: Image.asset(
+                imagePath,
+                cacheHeight: 216,
+                cacheWidth: 216,
+              ),
             ),
             const SizedBox(
               height: 10,
