@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocerry_app/app_state/navigation_bar_state.dart';
+import 'package:grocerry_app/model/product_details.dart';
 
 import 'package:grocerry_app/screens/home/accounts/account_screen.dart';
 import 'package:grocerry_app/screens/home/cart/cart_screen.dart';
@@ -28,7 +29,7 @@ class _ManageNavigationScreenState extends State<ManageNavigationScreen> {
         icon: Icon(Icons.person_2_outlined), label: "account"),
   ];
   // all screen list for navigation bar
-  List<Widget> screens = const [
+  List<Widget> screens = [
     HomeScreen(),
     ExploreProductScreen(),
     CartScreen(),
