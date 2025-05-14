@@ -11,6 +11,21 @@ class CustomBottomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    void onPressed(BuildContext context) async {
+      if (!context.mounted) return;
+      showDialog(
+          barrierDismissible: false,
+          context: context,
+          builder: (context) {
+            return Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [CircularProgressIndicator(), Text("Please wait..")],
+              ),
+            );
+          });
+    }
+
     CartItemsProvider provider = Provider.of<CartItemsProvider>(context);
     return Container(
       height: MediaQuery.of(context).size.height * 0.66,
@@ -222,7 +237,10 @@ class CustomBottomSheet extends StatelessWidget {
             Flexible(
               child: CustomButton(
                 btnText: "Place order",
-                ontap: () {
+                ontap: () async {
+                  onPressed(context);
+                  await Future.delayed(Duration(seconds: 2));
+
                   Navigator.push(context,
                       MaterialPageRoute(builder: (_) => OrderSuccessPage()));
                 },
