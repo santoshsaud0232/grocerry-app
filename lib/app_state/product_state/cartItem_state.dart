@@ -60,9 +60,20 @@ class CartItemsProvider extends ChangeNotifier {
     _favMap[productName] = !(_favMap[productName] ?? false);
 
     if (_favMap[productName]!) {
-      favriouteItems.add(product);
+      _favriouteItems.add(product);
     } else {
-      favriouteItems.remove(product);
+      _favriouteItems.remove(product);
+    }
+
+    notifyListeners();
+  }
+
+  void addAllFavriouteItemsToCart(Product product) {
+    if (!_cartItems.contains(product)) {
+      _cartItems.addAll(_favriouteItems);
+      String cleanedPrice = product.itemPrice.replaceAll(RegExp(r'[^\d.]'), '');
+      var itemCost = double.tryParse(cleanedPrice) ?? 0.0;
+      _totalItemsCost += itemCost;
     }
 
     notifyListeners();
