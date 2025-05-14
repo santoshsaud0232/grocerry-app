@@ -48,6 +48,10 @@ class CartItemsProvider extends ChangeNotifier {
 
   void removeFromCart(Product itemName) {
     _cartItems.remove(itemName);
+    //subtract the items price from the cart
+    String cleanedPrice = itemName.itemPrice.replaceAll(RegExp(r'[^\d.]'), '');
+    var itemCost = double.tryParse(cleanedPrice) ?? 0.0;
+    _totalItemsCost -= itemCost;
     notifyListeners();
   }
 
