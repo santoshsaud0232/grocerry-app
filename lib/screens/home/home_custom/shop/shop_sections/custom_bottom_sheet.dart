@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:grocerry_app/app_state/product_state/cartItem_state.dart';
 import 'package:grocerry_app/custom_widget/custom_button.dart';
 import 'package:grocerry_app/screens/home/cart/order_success_screen.dart';
+import 'package:provider/provider.dart';
 
 class CustomBottomSheet extends StatelessWidget {
   const CustomBottomSheet({
@@ -9,6 +11,7 @@ class CustomBottomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    CartItemsProvider provider = Provider.of<CartItemsProvider>(context);
     return Container(
       height: MediaQuery.of(context).size.height * 0.66,
       width: double.infinity,
@@ -20,7 +23,7 @@ class CustomBottomSheet extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         child: Column(
           children: [
-            const ListTile(
+            ListTile(
               leading: Text(
                 "Checkout",
                 style: TextStyle(
@@ -28,9 +31,12 @@ class CustomBottomSheet extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
-              trailing: Icon(
-                Icons.close,
-                size: 30,
+              trailing: GestureDetector(
+                onTap: () => Navigator.pop(context),
+                child: Icon(
+                  Icons.close,
+                  size: 30,
+                ),
               ),
             ),
             const SizedBox(
@@ -146,7 +152,7 @@ class CustomBottomSheet extends StatelessWidget {
               padding: const EdgeInsets.all(10.0),
               child: GestureDetector(
                 onTap: () {},
-                child: const Row(
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
@@ -158,7 +164,7 @@ class CustomBottomSheet extends StatelessWidget {
                     Row(
                       children: [
                         Text(
-                          "\$4.99",
+                          "\$ ${provider.totalItemsCost}",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 15,
@@ -178,7 +184,7 @@ class CustomBottomSheet extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 15,
+              height: 10,
             ),
             RichText(
                 textAlign: TextAlign.center,
@@ -211,15 +217,17 @@ class CustomBottomSheet extends StatelessWidget {
                       )),
                 ])),
             const SizedBox(
-              height: 30,
+              height: 10,
             ),
-            CustomButton(
-              btnText: "Place order",
-              ontap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (_) => OrderSuccessPage()));
-              },
-              backgroundColor: Colors.blue.shade200,
+            Flexible(
+              child: CustomButton(
+                btnText: "Place order",
+                ontap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => OrderSuccessPage()));
+                },
+                backgroundColor: Colors.blue.shade200,
+              ),
             )
           ],
         ),
