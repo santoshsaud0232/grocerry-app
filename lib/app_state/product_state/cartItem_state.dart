@@ -7,6 +7,8 @@ class CartItemsProvider extends ChangeNotifier {
   List<Product> get cartItems => _cartItems;
   final Map<String, int> _itemMap = {};
   Map<String, int> get itemMap => _itemMap;
+  double _totalItemsCost = 0;
+  double get totalItemsCost => _totalItemsCost;
 
   // bool _isFav = false;
   // bool get isFav => _isFav;
@@ -34,8 +36,15 @@ class CartItemsProvider extends ChangeNotifier {
 
   void addToCart(Product product) {
     _cartItems.add(product);
+    //total amount of the items in the carts
+    String cleanedPrice = product.itemPrice.replaceAll(RegExp(r'[^\d.]'), '');
+    var itemCost = double.tryParse(cleanedPrice) ?? 0.0;
+    _totalItemsCost = itemCost + _totalItemsCost;
+
     notifyListeners();
   }
+
+  void totalPriceOfCartItems() {}
 
   void removeFromCart(Product itemName) {
     _cartItems.remove(itemName);
